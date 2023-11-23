@@ -1,0 +1,7 @@
+logfile.log
+/venv
+server_pb2_grpc.py
+server_pb2.py
+server_pb2.pyi
+/__pycache__
+__pycache__

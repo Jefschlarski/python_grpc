@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  grpc_server:
+    container_name: $PROJETO
+    build:
+      context: $PROJETO_DIR
+      dockerfile: ${PROJETO_DIR}/docker/grpc/Dockerfile
+    ports:
+      - $PORTAS
+    # volumes:
+    #   - ./proto:/app/proto
+    command: ["venv/bin/python", "${SERVER}.py"]
